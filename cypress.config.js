@@ -2,7 +2,7 @@ const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: 'http://localhost:5173/',
+    baseUrl: 'https://vue3-abridge.netlify.app/',
     supportFile: false
   },
 })
