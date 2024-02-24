@@ -4,7 +4,7 @@
 			<button @click="showModal = false" class="absolute top-0 right-0 m-4 text-gray-600 hover:text-gray-800">
 				&times;
 			</button>
-			<form @submit.prevent="submitForm">
+			<form @submit.prevent="submitForm" class="form">
 				<label for="name">Name:</label>
 				<input type="text" id="name" v-model="formData.name"
 					class="block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
@@ -18,7 +18,7 @@
 	<div class="grid grid-cols-1 gap-6 lg:grid-cols-4">
 		<div class="rounded-md snap-start">
 			<div class="flex items-center justify-between p-4  rounded-t-md">
-				<div class="text-lg font-semibold cursor-pointer" @click="openAddDoingModal('toDo')">
+				<div class="text-lg font-semibold cursor-pointer open-modal-button" @click="openAddDoingModal('toDo')">
 					To do +
 				</div>
 			</div>
