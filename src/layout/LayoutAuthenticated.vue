@@ -8,7 +8,7 @@ import { useDarkModeStore } from '@/stores/darkMode.js'
 import BaseIcon from '@/components/BaseIcon.vue'
 import NavBarItemPlain from '@/components/NavBarItemPlain.vue'
 import AsideMenu from '@/components/AsideMenu.vue'
-import Navbar from '@/components/Navbar.vue'
+import Navbar from '@/components/KBnavbar.vue'
 import ProfilePic from '@/components/ProfilePic.vue'
 import BaseButton from '@/components/BaseButton.vue'
 import {
