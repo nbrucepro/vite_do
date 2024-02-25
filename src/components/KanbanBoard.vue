@@ -570,7 +570,9 @@ export default defineComponent({
 		const openAddDoingModal = (doType) => {
 			showModal.value = true;
 			ticketType.value = doType;
-			ticketToUpdate.value.showOptions = false
+			if (ticketToUpdate.value.showOptions === true) {
+				ticketToUpdate.value.showOptions = false
+			}
 		};
 		function openUpdateForm(ticket, doType) {
 			this.formData.name = ticket.todo;
