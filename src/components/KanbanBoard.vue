@@ -150,7 +150,7 @@
 						</template>
 					</draggable>
 				</div>
-				<div v-else>No to do tickets yet</div>
+				<div v-else>No to do tickets yet(reload)</div>
 			</div>
 		</div>
 		<div class="rounded-md snap-start">
@@ -277,7 +277,7 @@
 						</template>
 					</draggable>
 				</div>
-				<div v-else>No tickets in doing state</div>
+				<div v-else>No tickets in doing state(reload)</div>
 			</div>
 		</div>
 		<div class="rounded-md snap-start">
@@ -391,7 +391,7 @@
 						</template>
 					</draggable>
 				</div>
-				<div v-else>No tickets in review yet</div>
+				<div v-else>No tickets in review yet(reload)</div>
 			</div>
 		</div>
 		<div class="rounded-md snap-start">
@@ -505,7 +505,7 @@
 						</template>
 					</draggable>
 				</div>
-				<div v-else>No done tickets yet</div>
+				<div v-else>No done tickets yet(reload)</div>
 			</div>
 		</div>
 	</div>
