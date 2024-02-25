@@ -2,7 +2,7 @@ name: Todos CI
 
 on:
   push:
-    branches: [ "ft-main-todos" ]
+    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
