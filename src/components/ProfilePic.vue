@@ -2,30 +2,13 @@
 </script>
 <template>
 	<div class="flex items-center -space-x-1">
-				<a
-					href="#"
-					class="flex items-center justify-center w-8 h-8 text-sm font-semibold text-white bg-purple-500 rounded-full ring-2 ring-white"
-					>LU</a
-				>
-				<a
-					href="#"
-					class="flex items-center justify-center w-8 h-8 text-sm font-semibold text-white bg-blue-700 rounded-full ring-2 ring-white"
-					>RS</a
-				>
-				<a
-					href="#"
-					class="flex items-center justify-center w-8 h-8 text-sm font-semibold text-white bg-green-500 rounded-full ring-2 ring-white"
-					>SF</a
-				>
-				<a
-					href="#"
-					class="flex items-center justify-center w-8 h-8 text-sm font-semibold text-white bg-red-500 rounded-full ring-2 ring-white"
-					>MB</a
-				>
-				<a
-					href="#"
-					class="flex items-center justify-center w-8 h-8 text-sm font-semibold text-gray-500 bg-gray-200 rounded-full ring-2 ring-white"
-					>+8</a
-				>
-			</div>
+		<img src="../../images/avatar.svg"
+			class="flex items-center justify-center w-8 h-8 text-sm font-semibold text-white bg-[#D5D4E1] rounded-full ring-2 ring-white" />
+		<img src="../../images/avatar.svg"
+			class="flex items-center justify-center w-8 h-8 text-sm font-semibold text-white bg-[#151610] rounded-full ring-2 ring-white" />
+		<img src="../../images/avatar.svg"
+			class="flex items-center justify-center w-8 h-8 text-sm font-semibold text-white bg-[#B6C4BF] rounded-full ring-2 ring-white" />
+		<a href="#"
+			class="flex items-center justify-center w-[5.5rem] h-8 text-sm font-semibold text-white bg-[#00579F] rounded-full ring-2 ring-white">+1</a>
+	</div>
 </template>

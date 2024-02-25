@@ -76,7 +76,7 @@ const labelClass = computed(() => (props.small && props.icon ? 'px-1' : 'px-2'))
 
 const componentClass = computed(() => {
   const base = [
-    'inline-flex',
+    'flex',
     'justify-center',
     'items-center',
     'whitespace-nowrap',
@@ -84,24 +84,14 @@ const componentClass = computed(() => {
     'transition-colors',
     'focus:ring',
     'duration-150',
-    'border',
     'mr-4',
+    'p-2',
+    'px-4',
+    'font-bold',
     props.disabled ? 'cursor-not-allowed' : 'cursor-pointer',
     props.roundedFull ? 'rounded-full' : 'rounded',
     getButtonColor(props.color, props.outline, !props.disabled, props.active)
   ]
-
-  if (!props.label && props.icon) {
-    base.push('p-1')
-  } else if (props.small) {
-    base.push('text-sm', props.roundedFull ? 'px-3 py-1' : 'p-1')
-  } else {
-    base.push('py-2', props.roundedFull ? 'px-6' : 'px-3')
-  }
-
-  if (props.disabled) {
-    base.push(props.outline ? 'opacity-50' : 'opacity-70')
-  }
 
   return base
 })
@@ -117,7 +107,7 @@ const componentClass = computed(() => {
     :target="target"
     :disabled="disabled"
   >
-    <BaseIcon v-if="icon" :path="icon" :size="iconSize" />
+    <BaseIcon v-if="icon" :path="icon" :size="32" />
     <span v-if="label" :class="labelClass">{{ label }}</span>
   </component>
 </template>

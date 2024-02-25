@@ -14,7 +14,6 @@ const props = defineProps({
   },
   hasComponentLayout: Boolean,
   hasTable: Boolean,
-  isForm: Boolean,
   isHoverable: Boolean,
   isModal: Boolean
 })
@@ -46,9 +45,9 @@ const submit = (event) => {
 
 <template>
   <component
-    :is="isForm ? 'form' : 'div'"
+    is="div"
     :class="componentClass"
-    class="bg-white flex w-full"
+    class="bg-white flex w-full h-100"
     @submit="submit"
   >
     <slot v-if="hasComponentLayout" />

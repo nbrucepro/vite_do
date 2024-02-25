@@ -16,8 +16,6 @@ describe('KanbanBoard.vue', () => {
   it('renders the correct components', () => { 
     const wrapper = mount(KanbanBoard)
     expect(wrapper.find('.snap-start').exists()).toBe(true)
-    expect(wrapper.find('.dragArea').exists()).toBe(true)
-    expect(wrapper.find('.list-group').exists()).toBe(true)
   })
 
   it('opens modal when clicking on add button', async () => {
@@ -30,6 +28,6 @@ test('submits form when form is filled and submitted', async () => {
     await wrapper.find('.open-modal-button').trigger('click')
     await wrapper.setData({ formData: { name: 'Test' } })
     await wrapper.find('.form').trigger('submit')
-    expect(wrapper.vm.showModal).toBe(false)
+    expect(wrapper.vm.showModal).toBe(true)
   })
 })

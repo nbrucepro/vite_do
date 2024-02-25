@@ -1,14 +1,14 @@
-# vue_abridge
+# [vue_abridge](vue3-abridge.netlify.app/)
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a simple to do app powered by vue 3, tailwindcss, pinia and other various technologies
 
-## Recommended IDE Setup
+## Project Description
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+With consuming dummyjson apis vue_abridge can be used to view/add/update/delete tasks in todo, doing, under review and done board's stage 
 
-## Customize configuration
+This simple todo allows to drag task from one board section to another
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+As explained in dummyjson docs adding a new todo will not add it into the server, so during testing: updating/deleting newly added todo will not give expected result, but updating/deleting fetched todos will work as expected.
 
 ## Project Setup
 
@@ -22,14 +22,21 @@ npm install
 npm run dev
 ```
 
-### Compile and Minify for Production
+
+### Run Unit&Component Tests with
 
 ```sh
-npm run build
+npm run test
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+### Run e2e Tests with
 
 ```sh
-npm run test:unit
+npm run cypress:open
+```
+
+### Run Headless e2e Tests with
+
+```sh
+npm run test:e2e
 ```
