@@ -39,7 +39,7 @@ const asideLgCloseClick = (event) => {
       <div class="aside-brand flex flex-row h-14 items-center justify-between dark:bg-slate-900 my-4">
         <div class="text-center flex-1 lg:text-left lg:pl-6 xl:text-center xl:pl-0">
           <!-- <b class="font-black">Onerrr</b> -->
-          <img class="w-[4rem] mx-auto h-[4rem] rounded-md" src="../../images/icon-ref.png" alt="Sunset in the mountains">
+          <img class="w-[4rem] mx-auto h-[4rem] rounded-md" src="../../public/images/icon-ref.png" alt="Sunset in the mountains">
         </div>
         <button :class="[
           isAsideLgActive ? 'flex left-0' : 'hidden left-0',
