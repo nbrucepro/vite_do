@@ -1,8 +1,11 @@
-describe("Vue 3 Component Tests", () => {
+describe("Vue_abridge e2e tests", () => {
   beforeEach(() => {
     cy.visit("/");
   });
 
+  it("Render all required todos", () => {
+    cy.get(".dragclass").should("be.visible");
+  });
   it("opens and closes modal", () => {
     cy.contains(".open-modal-button", "To do +").click();
     cy.get(".fixed").should("be.visible");

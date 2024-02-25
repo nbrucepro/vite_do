@@ -24,7 +24,7 @@ const isMenuNavBarActive = ref(false)
 
 <template>
   <nav
-    class="top-0 inset-x-0 fixed bg-slate-200 h-14 z-30 transition-position w-screen lg:w-auto dark:bg-slate-800"
+    class="top-0 inset-x-0 fixed bg-[#EDF2F5] h-30 z-30 pb-[4.2rem] transition-position w-screen lg:w-auto dark:bg-slate-800"
   >
     <div class="flex lg:items-stretch" :class="containerMaxW">
       <div class="flex flex-1 items-stretch h-14">
@@ -34,12 +34,6 @@ const isMenuNavBarActive = ref(false)
         <NavBarItemPlain @click.prevent="isMenuNavBarActive = !isMenuNavBarActive">
           <BaseIcon :path="isMenuNavBarActive ? mdiClose : mdiDotsVertical" size="24" />
         </NavBarItemPlain>
-      </div>
-      <div
-        class="max-h-screen-menu overflow-y-auto lg:overflow-visible absolute w-screen top-14 left-0 bg-slate-200 shadow-lg lg:w-auto lg:flex lg:static lg:shadow-none dark:bg-slate-800"
-        :class="[isMenuNavBarActive ? 'block' : 'hidden']"
-      >
-        <NavBarMenuList :menu="menu" @menu-click="menuClick" />
       </div>
     </div>
   </nav>

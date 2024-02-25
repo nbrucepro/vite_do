@@ -1,11 +1,6 @@
 <script setup>
-import { mdiCog } from '@mdi/js'
-import CardBox from '@/components/CardBox.vue'
-import NumberDynamic from '@/components/NumberDynamic.vue'
+import { mdiCog, mdiMenu, mdiDotsVertical } from '@mdi/js'
 import BaseIcon from '@/components/BaseIcon.vue'
-import BaseLevel from '@/components/BaseLevel.vue'
-import PillTagTrend from '@/components/PillTagTrend.vue'
-import BaseButton from '@/components/BaseButton.vue'
 
 defineProps({
   number: {
@@ -42,23 +37,25 @@ defineProps({
   }
 })
 </script>
-
 <template>
-  <CardBox>
-    <BaseLevel v-if="trend" class="mb-3" mobile>
-      <PillTagTrend :trend="trend" :trend-type="trendType" small />
-      <BaseButton :icon="mdiCog" icon-w="w-4" icon-h="h-4" color="lightDark" small />
-    </BaseLevel>
-    <BaseLevel mobile>
-      <div>
-        <h3 class="text-lg leading-tight text-gray-500 dark:text-slate-400">
-          {{ label }}
-        </h3>
-        <h1 class="text-3xl leading-tight font-semibold">
-          <NumberDynamic :value="number" :prefix="prefix" :suffix="suffix" />
-        </h1>
-      </div>
-      <BaseIcon v-if="icon" :path="icon" size="48" w="" h="h-16" :class="color" />
-    </BaseLevel>
-  </CardBox>
+    <!-- <div class="w-full p-3 rounded-2xl my-1">
+      <img class="w-full h-[11rem] rounded-md" src="../../images/dummage.jpg" alt="Sunset in the mountains">
+    </div> -->
+    <div class="mb-2 px-6 py-4 flex justify-between">
+      <h1 class="font-bold text-xl ">{{ label.split(' ', 3).join(' ') }}</h1>
+      <span class="cursor-pointer">
+        <BaseIcon :path="mdiDotsVertical" :size="24"/>
+      </span>
+    </div>
+    <div class="px-6 cursor-move">
+    <p class="text-gray-700 text-base">
+      {{ label }}
+    </p>
+    <div class="pt-4 pb-2 flex justify-between">
+      <h1 class="font-bold text-xl ">{{ label.split(' ', 3).join(' ') }}</h1>
+      <span class="cursor-pointer">
+        <BaseIcon :path="mdiDotsVertical" :size="24"/>
+      </span>
+    </div>
+  </div>
 </template>
